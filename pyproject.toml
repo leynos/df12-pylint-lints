@@ -1,11 +1,11 @@
 [project]
 name = "df12-python-lints"
-version = "0.1.0"
+version = "0.2.0"
 description = "df12-python-lints package"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "ISC" }
-dependencies = ["pylint>=3.3"]
+dependencies = ["pylint>=3.3,<5"]
 
 [project.scripts]
 ambrleaks = "df12_python_lints.ambrleaks.cli:main"
@@ -318,4 +318,3 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["df12_python_lints"]
-
